@@ -1,0 +1,61 @@
+<div class="container border  shadow bg-white ">
+    <div>
+        <h1>Colour</h1>
+
+        <input type="checkbox" id="red" class="mr-2" value="Red" (change)="onFilterColorRed($event)" />
+        <label for="red" class="font-weight-bold">Red</label>
+        <br />
+
+        <input type="checkbox" id="blue" class="mr-2" value="Blue" (change)="onFilterColorBlue($event)" />
+        <label for="blue" class="font-weight-bold">Blue</label>
+
+        <br />
+        <input type="checkbox" id="green" class="mr-2" value="Green" (change)="onFilterColorGreen($event)" />
+        <label for="green" class="font-weight-bold">Green</label>
+
+    </div>
+
+    <div>
+        <h1>Gender</h1>
+
+        <input type="checkbox" id="men" class="mr-2" value="Men" (change)="onFilterMaleGender($event)" />
+        <label for="men" class="font-weight-bold">Men</label>
+        <br />
+
+        <input type="checkbox" id="women" class="mr-2" value="Women" (change)="onFilterFemaleGender($event)" />
+        <label for="women" class="font-weight-bold">Women</label>
+    </div>
+
+
+    <div>
+        <h1>Price</h1>
+
+        <input type="checkbox" id="0" class="mr-2" value="0" (change)="onChangePriceLow($event)" />
+        <label for="0" class="font-weight-bold">0-Rs250</label>
+
+        <br />
+        <input type="checkbox" id="251" class="mr-2" value="250" (change)="onChangePriceMedium($event)" />
+        <label for="251" class="font-weight-bold">Rs251-450</label>
+
+        <br />
+        <input type="checkbox" id="450" class="mr-2" value="450" (change)="onChangePriceHigh($event)" />
+        <label for="450" class="font-weight-bold">Rs 450</label>
+
+    </div>
+
+    <div>
+        <h1>Type</h1>
+
+        <input type="checkbox" id="polo" class="mr-2" value="Polo" (change)="onChangeTypePolo($event)" />
+        <label for="polo" class="font-weight-bold">Polo</label>
+
+        <br />
+        <input type="checkbox" id="hoodie" class="mr-2" value="Polo" (change)="onChangeTypeHoodie($event)" />
+        <label for="hoodie" class="font-weight-bold">Hoodie</label>
+
+        <br />
+        <input type="checkbox" id="basic" class="mr-2" value="Polo" (change)="onChangeTypeBasic($event)" />
+        <label for="basic" class="font-weight-bold">Basic</label>
+
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="d-flex">
+    <div class="mt-5">
+        <app-filters (redColor)="filterRedColor($event)" (blueColor)="filterBlueColor($event)"
+            (greenColor)="filterGreenColor($event)" (maleGender)="filteredMaleGender($event)"
+            (femaleGender)="filteredFemaleGender($event)" (lowPrice)="filterByLowPrice($event)"
+            (mediumPrice)="filterByMediumPrice($event)" (highPrice)="filterByHighPrice($event)"
+            (poloType)="filterbyPoloType($event)" (hoodieType)="filterbyHoodieType($event)"
+            (basicType)="filterbyBasicType($event)"></app-filters>
+    </div>
+
+    <div class="container  mt-5">
+        <div class="row">
+            <div class="col-9 ml-auto m-4 d-flex">
+                <input type="search" class="form-control border border-bottom-2"
+                    placeholder="Search for products" /><button type="button"
+                    class="search-button-container trigger search">Search</button>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4" *ngFor="let product of filteredProducts">
+                <div class="product-card mr-2 mb-5 shadow">
+                    <div class="card-bg-image">
+                        <h4>{{product.name}}</h4>
+                    </div>
+                    <div class="d-flex mt-3 justify-content-between align-items-center">
+                        <div class="card-body">
+                            <p>Rs {{product.price}}</p>
+                        </div>
+                        <button type="button" (click)="onAddToCartButton(product)">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 d-flex flex-column justify-content-center " *ngIf="products.length <= 0">
+        <div class="spinner-grow" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+</div>

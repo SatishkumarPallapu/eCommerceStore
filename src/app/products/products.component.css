@@ -1,0 +1,43 @@
+.product-card {
+    height: 300px;
+    border-radius: 12px;
+    padding: 10px 8px 0 8px;
+}
+
+.card-bg-image {
+    height: 200px;
+    width: 94%;
+    background-color: rgb(122, 129, 122);
+    margin: 10px;
+    padding: 10px;
+}
+
+.spinner-grow {
+    text-align: center;
+}
+
+.card-body {
+    padding: 10px 25px 0 25px;
+}
+
+button {
+    width: 138px;
+    height: 38px;
+    margin-right: 10px;
+    border: none;
+    background-color: black;
+    color: #fff;
+}
+
+h1 {
+    font-weight: bolder;
+    margin-left: 8px;
+}
+
+p {
+    font-weight: bolder;
+}
+
+.container {
+    margin-top: 100px;
+}
